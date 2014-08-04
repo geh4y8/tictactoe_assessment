@@ -21,4 +21,12 @@ describe('Game') do
 		expect(test_game.p1mark(3)).to eq ['X']
 		expect(test_game.p2mark(5)).to eq ['O']
 	end
+
+	it 'recognizes when 3 spaces are marked by the same player' do
+		test_game = Game.new
+		test_game.p1mark(3)
+		test_game.p1mark(6)
+		test_game.p1mark(9)
+		expect(test_game.winning_combos).to eq 'vertical win'
+	end
 end
