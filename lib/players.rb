@@ -13,8 +13,3 @@ class Players
 		@@players_arr << self
 	end
 end
-
-# p1 = Players.new('Bert')
-# p2 = Players.new('Ernie')
-# p p1.name
-# p Players.players_arr

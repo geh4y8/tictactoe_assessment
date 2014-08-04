@@ -13,7 +13,7 @@ end
 describe('Game') do
 	it 'initializes with 9 empty spaces' do
 		test_game = Game.new
-		expect(test_game.board).to eq([[1],[2],[3],[4],[5],[6],[7],[8],[9]])
+		expect(test_game.board_arr).to eq([[1],[2],[3],[4],[5],[6],[7],[8],[9]])
 	end
 
 	it 'allows a player to mark a space' do
