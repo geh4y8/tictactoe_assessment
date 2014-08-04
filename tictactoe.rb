@@ -21,16 +21,16 @@ end
 def start_game
 	@new_game = Game.new
 	loop do
-	puts @new_game.board
-	puts "#{@player1} pick your spot"
-	input = gets.chomp.to_i
-	@new_game.p1mark(input)
-	puts @new_game.board
-	win_game(@player1)
-	puts "#{@player2} pick your spot"
-	input = gets.chomp.to_i
-	@new_game.p2mark(input)
-	win_game(@player2)
+		puts @new_game.board
+		puts "#{@player1} pick your spot"
+		input = gets.chomp.to_i
+		@new_game.p1mark(input)
+		puts @new_game.board
+		win_game(@player1)
+		puts "#{@player2} pick your spot"
+		input = gets.chomp.to_i
+		@new_game.p2mark(input)
+		win_game(@player2)
 	end
 end
 
